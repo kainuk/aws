@@ -113,19 +113,6 @@ function aws_civicrm_managed(&$entities) {
 }
 
 /**
- * Implements hook_civicrm_caseTypes().
- *
- * Generate a list of case-types.
- *
- * Note: This hook only runs in CiviCRM 4.4+.
- *
- * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_caseTypes
- */
-function aws_civicrm_caseTypes(&$caseTypes) {
-  _aws_civix_civicrm_caseTypes($caseTypes);
-}
-
-/**
  * Implements hook_civicrm_angularModules().
  *
  * Generate a list of Angular modules.
@@ -157,13 +144,6 @@ function aws_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  */
 function aws_civicrm_entityTypes(&$entityTypes) {
   _aws_civix_civicrm_entityTypes($entityTypes);
-}
-
-/**
- * Implements hook_civicrm_thems().
- */
-function aws_civicrm_themes(&$themes) {
-  _aws_civix_civicrm_themes($themes);
 }
 
 /**
