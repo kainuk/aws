@@ -60,7 +60,7 @@
       <div class="messages status no-popup">
         <table class="form-layout">
           <tr>
-            <div class="icon inform-icon"></div>
+            {icon icon="fa-info-circle"}{/icon}
             {ts}No SES identities found.{/ts}
           </tr>
         </table>
