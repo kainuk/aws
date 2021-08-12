@@ -20,7 +20,9 @@ function awsRegistry(): \Civi\Aws\Registry {
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_container/
  */
 function aws_civicrm_container($container) {
-  $container->setDefinition('awsRegistry', new Definition('Civi\Aws\Registry'));
+  $awsRegistry = new Definition('Civi\Aws\Registry');
+  $awsRegistry->setPublic(true);
+  $container->setDefinition('awsRegistry', $awsRegistry);
 }
 
 /**
