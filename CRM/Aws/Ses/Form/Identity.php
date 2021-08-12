@@ -21,7 +21,7 @@ class CRM_Aws_Ses_Form_Identity extends CRM_Core_Form {
    * @var string
    * @since 1.0
    */
-  protected $_id;
+  public $_id;
 
   /**
    * Fields for the entity to be assigned to the template.
