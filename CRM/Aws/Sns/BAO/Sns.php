@@ -210,7 +210,7 @@ class CRM_Aws_Sns_BAO_Sns {
    * @since 1.0
    * @return array $topics
    */
-  public function getAllTopics(): array {
+  public static function getAllTopics(): array {
 
     $snsClient = awsRegistry()->get('snsClient');
 
@@ -332,7 +332,7 @@ class CRM_Aws_Sns_BAO_Sns {
    * @since 1.0
    * @return array $topicArnOptions
    */
-  public function getTopicArnOptions():array {
+  public static function getTopicArnOptions():array {
     $topics = self::getAllTopics();
     return array_reduce(
       $topics,
